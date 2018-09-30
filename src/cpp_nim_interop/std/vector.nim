@@ -16,7 +16,7 @@ template `[]=`*[T](v: var vector[T], key: int, val: T) =
 
 proc `[]`*[T](v: var vector[T], key: int): T {.importcpp: "(#[#])", nodecl.}
 
-proc push_back*[T](v: var vector[T], val: int){.importcpp: "#.push_back(@)", header: "<vector>".}
+proc push_back*[T](v: var vector[T], val: T){.importcpp: "#.push_back(@)", header: "<vector>".}
 
 proc size*[T](v:  vector[T]):int{.importcpp: "#.size()", header: "<vector>".}
 
