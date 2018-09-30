@@ -1,0 +1,1 @@
+type vect* {.importcpp: "std::vector", header: "<vector>".}[T] = object

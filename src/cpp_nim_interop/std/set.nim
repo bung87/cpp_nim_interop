@@ -1,0 +1,1 @@
+type std_set {.importc: "std::set", header: "<set>".}[T] = object
